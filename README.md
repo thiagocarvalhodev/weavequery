@@ -56,9 +56,18 @@ weavequery --help
 
 ## Configuration
 
-The tool uses the following defaults:
-- GraphQL Endpoint: https://arweave.net/graphql
-- AI Service: OpenAI (make sure to set your API key in the environment)
+The tool requires:
+- A local Ollama instance running with the CodeLlama model
+- Default GraphQL Endpoint: https://arweave.net/graphql
+
+### Setting up Ollama
+
+1. Install Ollama from https://ollama.ai
+2. Pull and run the CodeLlama model:
+```bash
+ollama run codellama
+```
+3. Ensure Ollama is running in the background before using the tool
 
 ## Development
 
