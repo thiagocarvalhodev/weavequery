@@ -1,5 +1,5 @@
 {
-  "name": "my-node-project",
+  "name": "weavequery",
   "version": "1.0.0",
   "description": "A new Node.js project",
   "main": "src/index.js",
@@ -32,7 +32,7 @@
     "typescript": "^5.0.0"
   },
   "bin": {
-    "mycli": "./dist/index.js"
+    "weavequery": "./dist/index.js"
   },
   "type": "module"
 }

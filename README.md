@@ -21,7 +21,7 @@ The CLI provides two main commands:
 ### Generate GraphQL Query
 
 ```bash
-mycli generate-query
+weavequery generate-query
 ```
 
 This command will:
@@ -35,7 +35,7 @@ This command will:
 Example:
 
 ```bash
-$ mycli generate-query
+$ weavequery generate-query
 ? Describe the Arweave GraphQL query you want to generate: Find the latest 5 transactions with their IDs and owners
 # The tool will generate and show you the query, then offer to execute it
 
@@ -51,7 +51,7 @@ curl https://arweave.net/graphql \
 To see all available commands and options:
 
 ```bash
-mycli --help
+weavequery --help
 ```
 
 ## Configuration

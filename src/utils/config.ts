@@ -25,7 +25,7 @@ export class ConfigManager {
     }
 
     async loadConfig(): Promise<void> {
-        const explorer = cosmiconfig('mycli');
+        const explorer = cosmiconfig('weavequery');
         const result = await explorer.search();
 
         if (result && !result.isEmpty) {
