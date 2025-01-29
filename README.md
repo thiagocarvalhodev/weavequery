@@ -7,7 +7,7 @@ A command-line tool that uses AI to help generate and execute GraphQL queries fo
 You can install the tool globally using yarn:
 
 ```bash
-git clone https://github.com/your-username/convo_graphql.git
+git clone https://github.com/thiagocarvalhodev/convo_graphql.git
 cd convo_graphql
 yarn install
 yarn build
