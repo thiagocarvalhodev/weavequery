@@ -18,7 +18,6 @@ build/
 *.swo
 
 # OS files
-.DS_Store
 Thumbs.db
 
 # Test coverage
