@@ -1,8 +1,12 @@
-import fetch, { RequestInit } from 'node-fetch';
+import fetch, { RequestInit, AbortSignal } from 'node-fetch';
 import { Logger } from '../utils/logger.js';
 
+interface GraphQLData {
+    [key: string]: unknown;
+}
+
 interface GraphQLResponse {
-    data?: any;
+    data?: GraphQLData;
     errors?: Array<{
         message: string;
         locations?: Array<{
@@ -52,7 +56,7 @@ export class GraphQLService {
                     query,
                     variables: options.variables,
                 }),
-                signal: controller.signal as any, // Type assertion to fix compatibility
+                signal: controller.signal as AbortSignal,
             };
 
             const response = await fetch(endpoint, fetchOptions);
