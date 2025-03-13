@@ -1,4 +1,4 @@
-# convo_graphql
+# weavequery
 
 A command-line tool that uses AI to help generate and execute GraphQL queries for Arweave. This tool simplifies the process of writing GraphQL queries by allowing you to describe what you want in natural language.
 
